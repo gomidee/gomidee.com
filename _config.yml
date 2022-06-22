@@ -1,0 +1,46 @@
+title: Gomidee
+email: gomidee@gomidee.com
+aboutme: >- # this means to ignore newlines until "baseurl:"
+  <p>I am an IT and Finance student. I particularly enjoy the privacy and security side of computing. You could say finances are like a hobby...</p>
+
+  <p>This website functions as a personal resume for me. It's also a place to write my thoughts. It's open source, you can find the code <a href="https://github.com/gomidee/gomidee.com">here</a>.</p>
+
+description: Eventough I'm passionate about technology, I try to stay away as much as I can from it. I like to write about my thoughts when I'm 'disconnected'.
+tagline: Gomidee's Website
+baseurl: ""
+url: "https://gomidee.com"
+permalink: "https://gomidee.com"
+permalink: pretty
+lang: en-US
+timezone: Australia/Brisbane
+
+
+author: Gomidee
+social:
+  links:
+    - https://github.com/gomidee
+
+about:
+- title: Github
+  url: https://github.com/gomidee
+  name: gomidee
+
+# Build settings
+#theme: default
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-relative-links
+  - jekyll-seo-tag
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+  - CONTRIBUTING.md
+  - FUNDING.md

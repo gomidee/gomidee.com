@@ -1,0 +1,490 @@
+/* playfair-display-500 - latin */
+@font-face {
+    font-family: 'Josefin Sans Light';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('/css/fonts/JosefinSans-Light.ttf'); /* IE9 Compat Modes */
+  }
+
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: bold;
+  font-weight: 500;
+  font-display: swap;
+  src: url('/css/fonts/JosefinSans-Bold.ttf')
+}
+/* playfair-display-600italic - latin */
+@font-face {
+    font-family: 'Josefin Sans';
+    font-style: italic;
+    font-weight: 600;
+    font-display: swap;
+    src: url('/css/fonts/JosefinSans-Italic.ttf'); /* IE9 Compat Modes */
+  }
+
+/* source-serif-pro-regular - latin */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+    font-display: swap;
+  src: url('/css/fonts/JosefinSans-Regular.ttf'); /* IE9 Compat Modes */
+}
+/* source-serif-pro-600 - latin */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 600;
+    font-display: swap;
+  src: url('/css/fonts/JosefinSans-Regular.ttf'); /* IE9 Compat Modes */
+}
+/* source-serif-pro-italic - latin */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: italic;
+  font-weight: 400;
+    font-display: swap;
+  src: url('/css/fonts/JosefinSans-Italic.ttf'); /* IE9 Compat Modes */
+}
+/* source-serif-pro-600italic - latin */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: italic;
+  font-weight: 600;
+    font-display: swap;
+  src: url('/css/fonts/JosefinSans-Italic.ttf'); /* IE9 Compat Modes */
+}
+
+  /* source-code-pro-regular - latin */
+@font-face {
+  font-family: 'Josefin Sans';
+  font-style: normal;
+  font-weight: 400;
+    font-display: swap;
+  src: url('/css/fonts/JosefinSans-Regular.ttf'); /* IE9 Compat Modes */
+}
+
+/* Text-Balancer */
+
+.balance-text {
+  visibility: hidden;
+}
+
+@media (scripting: none) {
+  .balance-text {
+      visibility: visible;
+  }
+}
+
+@supports (text-wrap: balance) {
+  .balance-text {
+      text-wrap: balance;
+      visibility: visible;
+  }
+}
+
+/* Body */
+
+body {
+  margin: 8em auto;
+  padding: 0px 12vw;
+  max-width: 700px;
+  min-width: 50px;
+  line-height: 1.7;
+  color: rgb(56, 56, 56);
+  font-family: 'Josefin Sans Light', serif;
+  text-align: justify;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased; /* corrects safari rendering */
+  font-size: 19px;
+}
+
+p {
+  hyphens: auto;
+}
+
+a, a:visited, button {
+    color: #005a30;
+    text-decoration-color: #005a47;
+}
+a:hover, button:hover {
+      color: #073A32;
+}
+
+/* Header stuff */
+
+header p, header a, header span {
+  font-family: 'Joefin Sans', bold;
+  font-size: 1.08rem;
+}
+
+header .author {
+  font-size: 1.2em;
+}
+
+/* Footer & Big website heading */
+
+footer {
+  font-family: 'Josefin Sans', serif;
+  text-align: center;
+}
+
+.author-footer {
+  font-size: 2.25rem;
+}
+
+.header-text {
+  font-style: italic;
+  font-size: 2em;
+  text-align: start;
+  padding: 0;
+}
+
+.author, .author-footer {
+  font-style: italic;
+  text-decoration-color: #005a47;
+  color: rgb(56, 56, 56);
+  margin: 0;
+}
+
+/* Author with date (before footer) */
+
+.authordate {
+  font-weight: 600;
+  text-align: center;
+  padding: 1em 0 0 0;
+}
+
+/* Paginator */
+
+.paginator {
+  display: flex;
+  position: relative;
+  padding: 1.75em;
+  background: #F6F6F6;
+  border-radius: 25px;
+  margin: 0 0 50px 0;
+  -webkit-box-shadow: 12px 12px 24px #d1d1d1,
+    -12px -12px 24px #ffffff;
+  box-shadow: 12px 12px 24px #d1d1d1,
+  -12px -12px 24px #ffffff;
+}
+
+.paginator p {
+  font-family: 'Josefin Sans', light;
+  font-size: 0.82em;
+  margin: 0;
+  hyphens: none;
+}
+
+.paginator-header {
+  font-size: 1em;
+  font-family: 'Josefin Sans', bold;
+  font-weight: bold;
+}
+
+a.next {
+  margin: 0;
+  float: right;
+  text-align: right;
+  width: 50%;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+a.previous {
+  margin: 0;
+  float: left;
+  text-align: left;
+  width: 50%;
+  padding-right: 10px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+/* The Headers */
+
+h1 {
+  font-family: 'Josefin Sans', bold;
+  text-decoration: none;
+  color:rgb(56, 56, 56);
+  font-size: 1.875rem;
+}
+
+h2 {
+  font-family: 'Josefin Sans', bold;
+  font-size: 1.625rem;
+  letter-spacing: 0.01em;
+}
+
+h3 {
+  font-size: 1.375rem;
+  letter-spacing: 0.01em;
+}
+
+h3, h4, h5, h6 {
+  font-family: 'Josefin Sans', bold;
+  letter-spacing: 0.01em;
+}
+
+/* Dotted hr */
+
+hr {
+  margin: 60px 30px;
+  /* color:  #006c6b  rgba(199, 199, 199, 0.801); */
+  display: flex;
+  bottom: 8px;
+  border: 0.2rem dotted;
+  padding: 0.06rem;
+  color: #006c6b;
+  z-index: -1;
+}
+
+header > hr {
+  margin: 40px 30px;
+}
+
+footer {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Image */
+
+img {
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
+  height: 100%;
+}
+
+img-attrib {
+  font-style: italic;
+  text-align: center;
+  padding: 0 0 0 5px;
+}
+
+/* Table */
+
+table {
+  border-collapse: collapse;
+  border-top: .3rem solid #333;
+  margin-bottom: var(--line-height);
+  width: 100%;
+}
+
+table td,
+table th {
+  padding: calc(var(--line-height) / 4) .6rem;
+}
+
+table td:first-child,
+table th:first-child {
+  padding-left: 0;
+}
+
+table td:last-child,
+table th:last-child {
+  padding-right: 0;
+}
+
+table th {
+  font-weight: normal;
+  text-align: left;
+}
+
+table tbody tr:first-child {
+  border-top: .2rem solid #333;
+}
+
+table tbody tr:last-child {
+  border-bottom: .3rem solid #333;
+}
+
+/* listtype */
+
+ol ol,
+ul ol {
+  list-style-type: lower-roman;
+}
+
+/* Blockquote */
+
+blockquote {
+  position: relative;
+  margin: 5% 10px;
+  padding: 0 1.5em;
+  border-left: 0.16em solid rgba(199, 199, 199, 0.801);
+}
+
+/* Math */
+
+.katex-display {
+  padding: 0.6rem 0;
+  font-size: 2rem;
+  overflow-x: auto;
+  border-radius: 4px;
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.katex--error {
+  color: #777;
+}
+
+/* Tasks */
+
+.task-list-item {
+  list-style-type: none;
+}
+
+.task-list-item input {
+  font-size: 1rem;
+  margin: 0 0 0 -1.6rem;
+  vertical-align: middle;
+  width: 1.3rem;
+}
+
+.task-list-item p {
+  margin-bottom: calc(.5 * var(--line-height));
+  --line-height: 1.7em;
+}
+
+/* Code */
+
+code {
+  background: #2d3339;
+  border-radius: 2px;
+  color: #aaa;
+  font-family: 'Hasklig', monospace;
+  font-size: .95rem;
+  margin: 0 .2rem;
+  padding: .1rem .5rem;
+  hyphens: none;
+}
+
+article > pre {
+  background: #2d3339;
+  font-family: 'Hasklig', monospace;
+  margin-bottom: var(--line-height);
+  padding: calc(.5 * var(--line-height)) 1.2rem;
+  tab-size: 4;
+  overflow-x: auto;
+  border-radius: 5px;
+  --line-height: 1.1em;
+}
+
+article > pre code {
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: #5c6371;
+}
+
+.token.operator,
+.token.punctuation {
+  color: #50b5c2;
+}
+
+.token.selector,
+.token.attr-name,
+.token.entity,
+.token.url {
+  color: #abb2c0;
+}
+
+.token.tag,
+.token.constant,
+.token.keyword {
+  color: #c775df;
+}
+
+.token.function,
+.token.attr-value {
+  color: #5daef2;
+}
+
+.token.number,
+.token.boolean,
+.token.regex,
+.token.string {
+  color: #96c374;
+}
+
+.token.variable,
+.token.property,
+.token.key {
+  color: #e16a72;
+}
+
+/* Mobile */
+
+@media only screen and (max-height: 550px) {
+  body {
+    margin: 2em auto 10vw auto;
+  }
+  .header-text {
+    font-size: 1.75em;
+  }
+}
+
+/* Button */
+
+button {
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+}
+
+button:hover {
+    background: transparent;
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    cursor: pointer;
+}
+
+button:active {
+    outline: none;
+    border: none;
+}
+
+button:focus {
+    outline: 0;
+}
+
+/* Theme changer */
+
+#theme-toggle {
+    float: right;
+    color: #383838;
+    position: relative;
+    top: 20px;
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+}
+
+.sun {
+    display: none;
+    width: 20px;
+    height: 20px;
+}
+
+.moon {
+    display: inline;
+}
+
+#theme-toggle:hover {
+    outline: 0;
+    background: hsl(0 0% 50% / 0.15);
+}

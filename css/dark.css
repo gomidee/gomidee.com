@@ -1,0 +1,58 @@
+[data-theme="dark"] body, [data-theme="dark"] header {
+    background-color: #21211e;
+	color: #D2D2D2;
+}
+
+[data-theme="dark"] :root {
+		 color-scheme: dark;
+}
+
+/* headers */
+[data-theme="dark"] h1, [data-theme="dark"] h2, [data-theme="dark"] .header-text, [data-theme="dark"] h3, [data-theme="dark"] h4, [data-theme="dark"] h5, [data-theme="dark"] h6, [data-theme="dark"] .author-footer, [data-theme="dark"] .author {
+	color: #e4d4c8;
+	text-decoration-color: #d0b49f;
+}
+
+/* links */
+
+[data-theme="dark"] a, [data-theme="dark"] a:visited {
+	color: #e4d4c8;
+	text-decoration-color: #d0b49f;
+}
+
+[data-theme="dark"] a:hover {
+	color: #a47551;
+}
+
+[data-theme="dark"] .focused {
+    color: #a47551;
+    font-weight: bold;
+}
+
+[data-theme="dark"] #theme-toggle {
+    color: #e4d4c8;
+}
+
+[data-theme="dark"] .moon {
+	display: none;
+}
+
+[data-theme="dark"] .sun {
+	display: inline;
+}
+
+/* dotted divider */
+
+[data-theme="dark"] hr {
+    color: #706b65;
+}
+
+/* paginator */
+
+[data-theme="dark"] .paginator {
+    background: #262626;
+	-webkit-box-shadow: 12px 12px 24px #0f0f0f,
+	-12px -12px 24px #151515;
+	box-shadow: 12px 12px 24px #0f0f0f,
+	-12px -12px 24px #151515;
+}

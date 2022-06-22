@@ -1,0 +1,15 @@
+---
+layout: default
+title: Contact
+---
+
+<h2>Contact</h2>
+<p>You can reach me <strong>here:</strong> <a href="mailto:gomidee@pm.me">gomidee@pm.me</a> <a href="/images/gomidee.asc">PGP Key</a>
+
+  <h4>You can also find me here:</h4>
+<ul>
+    {% for item in site.about %}
+        <li><strong>{{ item.title }}: </strong><a href="{{ item.url }}">{{ item.name }}</a></li>
+    {% endfor %}
+</ul>
+<img src"images/coolfrog.GIF">

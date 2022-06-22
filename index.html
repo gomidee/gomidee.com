@@ -1,0 +1,20 @@
+---
+title: Homepage
+layout: default
+---
+
+{{ site.aboutme }}
+
+<img src="images/pikapika.gif">
+
+<div id="recents">
+
+    <h2>Some of my Blog Posts</h2>
+        <ul>
+            {% for post in site.posts %}
+            <li> <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time> &#8212; <a id="{{ post.id }}" href="{{ post.url }}">{{ post.title }}</a></li>
+            {% endfor %}
+        </ul>
+</div>
+
+<a href="https://gomidee.com"><img src="images/gomidee.gif" alt="gomidee.com"></a>
